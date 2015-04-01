@@ -62,8 +62,12 @@ class WP_Disable_Comments {
 
     function display_disabled_message() {
 
+        $default_message = __( 'Comments have been disabled.', $this->slug );
+
+        $message = apply_filters( 'wp_disable_comments_disabled_message', $default_message );
+
         echo '<p class="comments-disabled">';
-            _e( 'Comments have been disabled.', $this->slug );
+            echo $message;
         echo '</p>';
 
     }
