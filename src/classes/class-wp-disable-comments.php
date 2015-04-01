@@ -32,6 +32,16 @@ class WP_Disable_Comments {
 
     }
 
+    /* Slug
+    ---------------------------------------------- */
+
+    /**
+     * Recipe slug.
+     *
+     * @var string
+     */
+    protected $slug = 'wp-disable-comments';
+
     /* Constructor
     ---------------------------------------------------------------------------------- */
 
@@ -40,8 +50,22 @@ class WP_Disable_Comments {
      */
     public function __construct() {
 
+        add_action( 'comment_form_comments_closed', array( $this, 'display_disabled_message' ) );
+
         add_filter( 'comments_open', '__return_false' );
         add_filter( 'pings_open', '__return_false' );
 
     }
+
+    /* Methods
+    ---------------------------------------------------------------------------------- */
+
+    function display_disabled_message() {
+
+        echo '<p class="comments-disabled">';
+            _e( 'Comments have been disabled.', $this->slug );
+        echo '</p>';
+
+    }
+
 }
