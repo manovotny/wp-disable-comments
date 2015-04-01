@@ -28,7 +28,7 @@ module.exports = (function () {
             slug: 'wp-disable-comments',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-disable-comments',
-            version: '0.0.0'
+            version: '1.0.0'
         }
     };
 

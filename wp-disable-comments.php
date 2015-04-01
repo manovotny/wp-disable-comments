@@ -3,7 +3,7 @@
  * Plugin Name: WP Disable Comments
  * Plugin URI: https://github.com/manovotny/wp-disable-comments
  * Description: Automatically disables comments on all posts and pages.
- * Version: 0.0.0
+ * Version: 1.0.0
  * Author: Michael Novotny
  * Author URI: http://manovotny.com
  * License: GPL-3.0+

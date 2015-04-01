@@ -19,7 +19,7 @@ module.exports = (function () {
             name: 'WP Disable Comments',
             slug: 'wp-disable-comments',
             url: 'https://github.com/manovotny/wp-disable-comments',
-            version: '0.0.0'
+            version: '1.0.0'
         },
         translations: {
             domain: 'wp-disable-comments',
